@@ -41,8 +41,12 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    max-width: 100%;
+    max-width: 90%;
     vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /*box-shadow: 10px 10px 10px #888888;*/
 }
 
 
@@ -201,4 +205,14 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+/**
+ * Svg in contents
+ */
+
+.svgdiv {
+  width: 100%;
+  text-align: center;
 }
