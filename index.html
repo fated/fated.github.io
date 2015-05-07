@@ -7,14 +7,14 @@ layout: default
   <!-- This loops through the paginated posts -->
   <ul class="post-list">
     {% for post in paginator.posts %}
-      <li class="post">
+      <li class="page-post">
         <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
 
-        {{ post.excerpt }}
+        <p>{{ post.excerpt }}</p>
 
         <span class="post-meta">
           {% if post.categories.size > 0 %}
