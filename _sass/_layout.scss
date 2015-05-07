@@ -126,13 +126,13 @@
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+    width:         calc(30% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
@@ -149,8 +149,13 @@
 }
 
 @include media-query($on-palm) {
-    .footer-col {
-        float: none;
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
@@ -172,10 +177,30 @@
 .post-list {
     margin-left: 0;
     list-style: none;
+}
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+.post {
+    position: relative;
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    border-bottom: #EBF2F6 1px solid;
+}
+
+.post:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    background: #FFF;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    box-shadow: #FFF 0 0 0 5px;
 }
 
 .post-meta {
@@ -233,4 +258,56 @@
             font-size: 18px;
         }
     }
+}
+
+
+/**
+ * Pagination
+ */
+.pagination {
+    position: relative;
+    width: 80%;
+    max-width: 710px;
+    margin: 4rem auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+    color: #9EABB3;
+    text-align: center;
+}
+
+.pagination a {
+    color: #9EABB3;
+    transition: all 0.2s ease;
+}
+
+/* Push the previous/next links out to the left/right */
+.previous,
+.next {
+    position: absolute;
+    display: inline-block;
+    padding: 2px 20px;
+    border: #bfc8cd 1px solid;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: border ease 0.3s;
+}
+
+.previous {
+    left: 0;
+}
+
+.page-number {
+    display: inline-block;
+    padding: 2px 0;
+    min-width: 100px;
+}
+
+.next {
+    right: 0;
+}
+
+.previous:hover,
+.next:hover {
+    color: #889093;
+    border-color: #98a0a4;
 }
