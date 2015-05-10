@@ -48,7 +48,11 @@ img {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    /*box-shadow: 10px 10px 10px #888888;*/
+    box-shadow: 0 5px 5px 0 #888888;
+    /*-moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #888;*/
+
 }
 
 
@@ -62,11 +66,13 @@ figure > img {
     vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 5px 5px 0 #888888;
     /*box-shadow: 10px 10px 10px #888888;*/
 }
 
 figcaption {
     font-size: $small-font-size;
+    text-align: center;
 }
 
 
@@ -122,8 +128,7 @@ blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
+    font-size: 90%;
     font-style: italic;
 
     > :last-child {
@@ -254,4 +259,35 @@ td {
 
 tbody tr:hover td {
     color: #009;
+}
+
+
+/**
+ * Horizonal line
+ */
+
+hr {
+    width: 90%;
+    border: 0 none;
+    position: relative;
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    border-bottom: #EBF2F6 1px solid;
+}
+
+hr:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    background: #FFF;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    box-shadow: #FFF 0 0 0 5px;
 }
