@@ -3,7 +3,8 @@
  */
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+dl, dd, ol, ul, img, figure,
+figcaption, table, th, td, tbody {
     margin: 0;
     padding: 0;
 }
@@ -30,7 +31,8 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol, dl, img, figure,
+figcaption, table, th, td, tbody,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }

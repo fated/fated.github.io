@@ -4,7 +4,6 @@ layout: default
 
 <div class="home">
 
-  <!-- This loops through the paginated posts -->
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li class="page-post">
@@ -17,8 +16,10 @@ layout: default
         <p>{{ post.excerpt }}</p>
 
         <span class="post-meta">
-          {% if post.categories.size > 0 %}
-            {{ post.categories | array_to_sentence_string | prepend: 'Categories: ' }}
+          {% if post.tags.size > 0 %}
+            {% for tag in post.tags %}
+              <a class="post-tag" href="{{ tag | prepend: '/archives/tag/' | prepend: site.baseurl | append: '/' }}">{{tag}}</a>
+            {% endfor %}
           {% endif %}
         </span>
 

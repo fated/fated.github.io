@@ -16,8 +16,11 @@ layout: default
         • {{ page.meta }}
       {% endif %}
 
-      {% if page.categories.size > 0 %}
-        • {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
+      {% if page.tags.size > 0 %}
+        •
+        {% for tag in page.tags %}
+          <a class="post-tag" href="{{ tag | prepend: '/archives/tag/' | prepend: site.baseurl | append: '/' }}">{{tag}}</a>
+        {% endfor %}
       {% endif %}
     </p>
   </header>
