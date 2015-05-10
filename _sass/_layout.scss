@@ -230,6 +230,17 @@
     position: relative;
     background-color: #777777;
     top: -1px;
+
+    &,
+    &:visited {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    &:hover {
+        color: #ffffff;
+        background-color: #337ab7;
+        text-decoration: none;
+    }
 }
 
 
@@ -331,4 +342,12 @@
 .next:hover {
     color: #889093;
     border-color: #98a0a4;
+}
+
+
+/**
+ * Archives
+ */
+.posts {
+    margin-bottom: $spacing-unit;
 }

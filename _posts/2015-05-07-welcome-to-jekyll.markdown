@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2015-05-07 12:54:48
-tags: test test-two test-three
+tags: test test-four
 categories: jekyll update
 comments: true
 ---
@@ -27,6 +27,15 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+That's some text with a footnote.[^1]
+
+[^1]: And that's the footnote. 
 
 [jekyll]:      http://jekyllrb.com
 [jekyll-gh]:   https://github.com/jekyll/jekyll

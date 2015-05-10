@@ -2,6 +2,9 @@ mainmenu:
   home:
     url: "/"
     text: "Home"
+  archives:
+    url: "/archives/"
+    text: "Archives"
   subscribe:
     url: "/feed.xml"
     text: "Subscribe"

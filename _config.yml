@@ -1,5 +1,5 @@
 # Site settings
-title: Bruce Chou Blog
+title: Bruce Chou's Blog
 email: brucechou24@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This is my personal blog covers machine learning.
@@ -13,7 +13,26 @@ weibo_url: ffffated
 # Build settings
 markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "superscript"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "superscript", "footnotes"]
 
 permalink: pretty
 paginate: 10
+
+gems:
+  - jekyll-archives
+
+# Archives settings
+jekyll-archives:
+  enabled: all
+  layouts:
+    year: year-archive
+    month: month-archive
+    day: day-archive
+    tag: tag-archive
+    category: cat-archive
+  permalinks:
+    year: '/archives/:year/'
+    month: '/archives/:year/:month/'
+    day: '/archives/:year/:month/:day/'
+    tag: '/archives/tag/:name/'
+    category: '/archives/category/:name/'
