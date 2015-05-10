@@ -217,6 +217,19 @@
     font-size: 24px;
 }
 
+.post-tag {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 80%;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: .25em;
+    position: relative;
+    background-color: #777777;
+    top: -1px;
+}
 
 
 /**
@@ -224,6 +237,7 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+    text-align: center;
 }
 
 .post-title {
