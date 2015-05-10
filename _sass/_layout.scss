@@ -26,6 +26,7 @@
 .site-nav {
     float: right;
     line-height: 56px;
+    z-index: 9999;
 
     .menu-icon {
         display: none;
@@ -217,6 +218,30 @@
     font-size: 24px;
 }
 
+.post-tag {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 80%;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: .25em;
+    position: relative;
+    background-color: #777777;
+    top: -1px;
+
+    &,
+    &:visited {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    &:hover {
+        color: #ffffff;
+        background-color: #337ab7;
+        text-decoration: none;
+    }
+}
 
 
 /**
@@ -224,6 +249,7 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+    text-align: center;
 }
 
 .post-title {
@@ -289,6 +315,8 @@
 .next {
     position: absolute;
     display: inline-block;
+    font-size: 90%;
+    font-weight: 500;
     padding: 2px 20px;
     border: #bfc8cd 1px solid;
     text-decoration: none;
@@ -314,4 +342,12 @@
 .next:hover {
     color: #889093;
     border-color: #98a0a4;
+}
+
+
+/**
+ * Archives
+ */
+.posts {
+    margin-bottom: $spacing-unit;
 }
