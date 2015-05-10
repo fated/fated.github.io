@@ -1,0 +1,10 @@
+mainmenu:
+  home:
+    url: "/"
+    text: "Home"
+  subscribe:
+    url: "/feed.xml"
+    text: "Subscribe"
+  about:
+    url: "/about/"
+    text: "About"
