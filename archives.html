@@ -9,7 +9,7 @@ permalink: /archives/
   {% if site.tags.size > 0 %}
     {% for tag in site.tags %}
       {% assign t = tag | first %}
-      <a class="post-tag" href="{{ t | prepend: '/archives/tag/' | prepend: site.baseurl | append: '/' }}">{{t}}</a>
+      <a class="post-tag" href="{{ t | downcase | prepend: '/archives/tag/' | prepend: site.baseurl | append: '/' }}">{{t}}</a>
     {% endfor %}
   {% endif %}
 </p>
