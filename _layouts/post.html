@@ -20,7 +20,7 @@ layout: default
       {% if page.tags.size > 0 %}
         •
         {% for tag in page.tags %}
-          <a class="post-tag" href="{{ tag | prepend: '/archives/tag/' | prepend: site.baseurl | append: '/' }}">{{tag}}</a>
+          <a class="post-tag" href="{{ tag | downcase | prepend: '/archives/tag/' | prepend: site.baseurl | append: '/' }}">{{tag}}</a>
         {% endfor %}
       {% endif %}
     </p>
