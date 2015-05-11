@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /_drafts/
+Disallow:
+
+Sitemap: http://www.brucechou.com/sitemap.xml

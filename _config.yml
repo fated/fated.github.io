@@ -4,7 +4,7 @@ email: brucechou24@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This is my personal blog covers machine learning.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.brucechou.com" # the base hostname & protocol for your site
+site_url: "http://www.brucechou.com" # the base hostname & protocol for your site
 twitter_username: brucechou
 github_username:  fated
 weibo_username: 萝卜丝粥
@@ -15,11 +15,17 @@ markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "superscript", "footnotes"]
 
-permalink: pretty
+permalink: /:year/:month/:day/:title/
 paginate: 10
 
 gems:
   - jekyll-archives
+  - jekyll-gist
+
+exclude:
+  - Gemfile
+  - README.md
+  - LICENSE
 
 # Archives settings
 jekyll-archives:
