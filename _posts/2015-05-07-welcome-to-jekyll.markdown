@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2015-05-07 12:54:48
-tags: test test-four
+tags: jekyll
 categories: jekyll update
 comments: true
 ---

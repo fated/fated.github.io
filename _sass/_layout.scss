@@ -410,3 +410,42 @@
     color: #889093;
     border-color: #98a0a4;
 }
+
+/**
+ * Back to top
+ */
+
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 9999;
+    background-color: #777777;
+    color: #eeeeee;
+    width: 50px;
+    height: 34px;
+    line-height: 34px;
+    right: 30px;
+    bottom: 30px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.scroll-top-wrapper:hover {
+    opacity: 1.0;
+    background-color: #888888;
+}
+
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 0.6;
+}
