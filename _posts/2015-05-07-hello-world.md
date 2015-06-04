@@ -5,6 +5,7 @@ date:   2015-05-07 12:54:48
 tags: jekyll test
 categories: jekyll
 comments: true
+mathjax: true
 excerpt: 本文仅用做测试 Jekyll 的各种文字效果.
 ---
 
@@ -67,6 +68,7 @@ class TestClass {
 
 测试第二种插入代码的方式:
 
+<div>
 {% highlight ruby %}
 def print_hi(name)
   puts "Hi, #{name}"
@@ -74,6 +76,7 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+</div>
 
 ### 测试表格
 
@@ -102,6 +105,31 @@ Markdown 风格插入图片:
 Jekyll 风格插入图片:
 
 {% include figure.html src="/favicon.png" caption="测试说明文字" %}
+
+测试 SVG 图片:
+
+<div class="svgdiv">
+<svg width="400" height="150">
+  <rect x="130" y="20" width="100" height="100" stroke="black" stroke-width="1" fill="white" />
+  <line x1="90" y1="45" x2="130" y2="45" stroke="black" stroke-width="1" />
+  <line x1="90" y1="95" x2="130" y2="95" stroke="black" stroke-width="1" />
+  <text x="70" y="50" fill="black" text-anchor="middle" font-size="20px">x</text>
+  <text x="70" y="100" fill="black" text-anchor="middle" font-size="20px">y</text>
+
+  <text x="180" y="90" fill="black" text-anchor="middle" font-size="40px">*</text>
+  <line x1="230" y1="70" x2="280" y2="70" stroke="black" stroke-width="1" />
+</svg>
+</div>
+<figcaption> SVG 图片测试 </figcaption>
+
+### 测试公式
+
+<div>
+$$
+\hat{y} := \text{sgn}(\frac{1}{2}\sum_{i=1}^{n-1}\hat{\alpha}_i y_i \mathcal{K}(\mathbf{x_i},\mathbf{x_n})+\hat{b})
+$$
+</div>
+
 
 [^1]: 脚注1. 
 

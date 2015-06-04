@@ -43,16 +43,12 @@ figcaption, table, th, td, tbody,
  * Images
  */
 img {
+    display: block;
     max-width: 90%;
     vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    box-shadow: 0 5px 5px 0 #888888;
-    /*-moz-box-shadow: 0 0 5px 5px #888;
-    -webkit-box-shadow: 0 0 5px 5px#888;
-    box-shadow: 0 0 5px 5px #888;*/
-
+    box-shadow: 0 5px 5px 0 $grey-color;
 }
 
 
@@ -66,8 +62,7 @@ figure > img {
     vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 5px 5px 0 #888888;
-    /*box-shadow: 10px 10px 10px #888888;*/
+    box-shadow: 0 5px 5px 0 $grey-color;
 }
 
 figcaption {
@@ -192,7 +187,6 @@ pre {
  * Clearfix
  */
 %clearfix {
-
     &:after {
         content: "";
         display: table;
@@ -220,22 +214,22 @@ pre {
 }
 
 
+
 /**
  * Svg in contents
  */
-
 .svgdiv {
   width: 100%;
   text-align: center;
 }
 
 
+
 /**
  * Table
  */
-
 table {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-family: $base-font-family;
     font-size: 12px;
     border-collapse: collapse;
     max-width: 90%;
@@ -244,35 +238,35 @@ table {
 }
 
 th {
-    font-size: 14px;
+    font-size: $small-font-size;
     font-weight: normal;
-    color: #039;
-    padding: 10px 8px;
-    border-bottom: 2px solid #6678b1;
+    color: darken($brand-color, 15%);
+    padding: 6px 8px;
+    border-bottom: 2px solid $brand-color;
 }
 
 td {
-    border-bottom: 1px solid #ccc;
-    color: #669;
+    border-bottom: 1px solid $grey-color-light;
+    color: $grey-color;
     padding: 6px 8px;
 }
 
 tbody tr:hover td {
-    color: #009;
+    color: darken($brand-color, 15%);
 }
+
 
 
 /**
  * Horizonal line
  */
-
 hr {
     width: 90%;
     border: 0 none;
     position: relative;
     margin: 1rem auto;
     padding-bottom: 1rem;
-    border-bottom: #EBF2F6 1px solid;
+    border-bottom: $grey-color-light 1px solid;
 }
 
 hr:after {
@@ -280,14 +274,12 @@ hr:after {
     content: "";
     width: 7px;
     height: 7px;
-    border: #E7EEF2 1px solid;
+    border: $grey-color-light 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
-    background: #FFF;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
+    background: $background-color;
     border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
+    box-shadow: $background-color 0 0 0 5px;
 }
