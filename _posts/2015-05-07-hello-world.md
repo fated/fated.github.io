@@ -2,11 +2,11 @@
 layout: post
 title:  "Hello world!"
 date:   2015-05-07 12:54:48
-tags: jekyll test
 categories: jekyll
+tags: jekyll test
 comments: true
 mathjax: true
-excerpt: 本文仅用做测试 Jekyll 的各种文字效果.
+excerpt: 本文仅用做测试 Jekyll 的各种排版效果.
 ---
 
 本文仅用做测试 [Jekyll][jekyll] 的各种文字效果.
