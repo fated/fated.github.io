@@ -1,26 +1,31 @@
 <div class="share">
   <h3>Share this post on:</h3>
   <div class="share-list">
-    <a class="icon-twitter" href="http://twitter.com/share?text={{page.title}}&amp;url={{site.site_url}}{{ page.url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-    <span class="share-button">Twitter</span>
+    <a class="share-icon fa-stack" href="mailto:name@email.com?subject={{page.title}}&amp;body={{page.excerpt}}%0A{{site.site_url}}{{page.url}}">
+      <i class="fa fa-envelope-square fa-2x"></i>
     </a>
-    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{site.site_url}}{{page.url}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-      <span class="share-button">Facebook</span>
+    <a class="share-icon fa-stack" href="http://twitter.com/share?text={{page.title}}&amp;url={{site.site_url}}{{page.url}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <i class="fa fa-twitter-square fa-2x"></i>
     </a>
-    <a class="icon-google-plus" href="https://plus.google.com/share?url={{site.site_url}}{{page.url}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-      <span class="share-button">Google+</span>
+    <a class="share-icon fa-stack" href="https://www.facebook.com/sharer/sharer.php?u={{site.site_url}}{{page.url}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <i class="fa fa-facebook-square fa-2x"></i>
     </a>
-    <a class="icon-pocket" href="http://getpocket.com/edit?url={{site.site_url}}{{page.url}}" onclick="window.open(this.href, 'pocket-share', 'width=610,height=400');return false;">
-      <span class="share-button">Pocket</span>
+    <a class="share-icon fa-stack" href="https://plus.google.com/share?url={{site.site_url}}{{page.url}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <i class="fa fa-google-plus-square fa-2x"></i>
     </a>
-    <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{site.site_url}}{{page.url}}&amp;title={{page.title}}&amp;summary={{page.excerpt}}" onclick="window.open(this.href, 'linkedin-share', 'width=650,height=510');return false;">
-      <span class="share-button">LinkedIn</span>
+    <a class="share-icon fa-stack" href="http://getpocket.com/edit?url={{site.site_url}}{{page.url}}" onclick="window.open(this.href, 'pocket-share', 'width=610,height=400');return false;">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-angle-down fa-2x fa-inverse"></i>
     </a>
-    <a class="icon-tumblr" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;content={{site.site_url}}{{page.url}}&amp;title={{page.title}}&amp;caption={{page.excerpt}}&amp;tags={% for tag in page.tags %}{{tag | append: ','}}{% endfor %}" onclick="window.open(this.href, 'tumblr-share', 'width=540,height=560');return false;">
-      <span class="share-button">Tumblr</span>
+    <a class="share-icon fa-stack" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{site.site_url}}{{page.url}}&amp;title={{page.title}}&amp;summary={{page.excerpt}}" onclick="window.open(this.href, 'linkedin-share', 'width=650,height=510');return false;">
+      <i class="fa fa-linkedin-square fa-2x"></i>
     </a>
-    <a class="icon-weibo" href="http://service.weibo.com/share/share.php?url={{site.site_url}}{{page.url}}&amp;title={{page.title}}" onclick="window.open(this.href, 'weibo-share', 'width=650,height=370');return false;">
-      <span class="share-button">新浪微博</span>
+    <a class="share-icon fa-stack" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;content={{site.site_url}}{{page.url}}&amp;title={{page.title}}&amp;caption={{page.excerpt}}&amp;tags={% for tag in page.tags %}{{tag | append: ','}}{% endfor %}" onclick="window.open(this.href, 'tumblr-share', 'width=540,height=560');return false;">
+      <i class="fa fa-tumblr-square fa-2x"></i>
+    </a>
+    <a class="share-icon fa-stack" href="http://service.weibo.com/share/share.php?url={{site.site_url}}{{page.url}}&amp;title={{page.title}}" onclick="window.open(this.href, 'weibo-share', 'width=650,height=370');return false;">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-weibo fa-lg fa-inverse"></i>
     </a>
   </div>
 </div>

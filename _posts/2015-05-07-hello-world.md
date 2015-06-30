@@ -99,12 +99,12 @@ Content Cell  | Content Cell
 
 Markdown 风格插入图片:
 
-![](/favicon.png)
+![](/images/favicon.png)
 <figcaption> 本网站的 favicon </figcaption>
 
 Jekyll 风格插入图片:
 
-{% include figure.html src="/favicon.png" caption="测试说明文字" %}
+{% include figure.html src="/images/favicon.png" caption="测试说明文字" %}
 
 测试 SVG 图片:
 
