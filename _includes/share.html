@@ -27,5 +27,23 @@
       <i class="fa fa-square fa-stack-2x"></i>
       <i class="fa fa-weibo fa-lg fa-inverse"></i>
     </a>
+    <div class="share-icon fa-stack" id="popup" onclick="showPopup();">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-wechat fa-lg fa-inverse"></i>
+    </div>
+    <div id="popup_content">
+      <div id="popup_header">
+        <p id="popup_close" onclick="hidePopup()">×</p>
+        <h3 id="popup_h3">分享到微信朋友圈</h3>
+      </div>
+      <div id="popup_body">
+        <p id="popup_qrcode"></p>
+        <script type="text/javascript">
+          jQuery('#popup_qrcode').qrcode({
+            text : window.location.href
+          });
+        </script>
+      </div>
+    </div>
   </div>
 </div>
