@@ -26,6 +26,10 @@ layout: default
     </p>
   </header>
 
+  {% if page.toc %}
+    <div id="toc"></div>
+  {% endif %}
+
   <article class="post-content">
     {{ content }}
   </article>
@@ -54,7 +58,17 @@ layout: default
 
   {% if page.mathjax %}
     <!-- for mathjax support -->
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  {% endif %}
+
+  {% if page.toc %}
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#toc').toc();
+      });
+    </script>
   {% endif %}
 
 </div>

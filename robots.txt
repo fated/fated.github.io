@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://www.brucechou.com/sitemap.xml
+Sitemap: https://brucechou.com/sitemap.xml
